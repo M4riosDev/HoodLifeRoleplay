@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodlife - MC Roleplay Server</title>
+    <link rel="icon" type="image/png" href="assets/Logos/logo.png">
+                               <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--I know, javascript inside html is the worst. Soon I 'll seperate them... (maybe)'-->
+                                <!--JS-->
+    <script src="https://mcapi.us/scripts/minecraft.js"></script>
+    <script type="text/javascript" src="assets/js/clipboard.js"></script>
+    <script type="text/javascript" src="assets/js/mobilenavbar.js"></script>
+    <script type="text/javascript" src="assets/js/scroll.js"></script>
+    <script type="text/javascript" src="assets/js/players .js"></script>
+</head>
+<body>
+
+    <!-- NavBar -->
+    <nav class="desktop_navbar">
+      <a href="#"><img class="desktop_navbar_logo_img" src="assets/Logos/logo.png" alt="logo"></a>
+      <a href="#home" class="desktop_navbar_link scroll">Home</a>
+      <a href="#discord" class="desktop_navbar_link scroll">About Us</a>
+      <a href="#more" class="desktop_navbar_link scroll">Features</a>
+      <a href="#about" class="desktop_navbar_link scroll">Screenshots</a>
+      <a href="https://discord.gg/hoodliferpgr" class="desktop_navbar_link scroll">Discord Server</a>
+      <a class="desktop_navbar_link scroll">Players online: <span
+        class="players"></span>
+      <div class="desktop_navbar_link2_div">
+        <i class="fa fa-sign-in" aria-hidden="true"></i><a href="#join" class="desktop_navbar_link2 scroll">Join Us!</a>
+      </div>
+    </nav>
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="assets/Logos/logo.png" alt="logo"></a>
+      <div id="mobile_navbar_links">
+          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="index.html">Home</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">About Us</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#more">Features</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">Screenshots</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="https://discord.gg/hoodliferpgr">Discord Server</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">Join Us</a>
+        </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+    <!--Home -->
+    <div id="home"></div>
+    <div class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="#" id="logoLink">
+          <img class="main1_logo" src="assets/Logos/logo.png" alt="logo">
+        </a>
+        <div class="main1_description">
+          <a>Roleplay,<br>like</a>
+          <a class="main1_actcent">never before</a><a>.</a>
+        </div>
+        <div class="main1_ipcopier_div">
+          <button class="main1_ipcopier" onclick="copyText()" type="button">
+            <span class="main1_ipcopier_text1">hoodliferp.xyz</span>
+            <br>
+            <span class="main1_ipcopier_text2">Click to copy</span>
+          </button>
+        </div>
+        <a href="#discord" class="scroll">
+          <img alt="downarrow" class="main1_downarrow" src="assets/emoji/downarrow.png">
+        </a>
+      </div> 
+
+       <!-- Discord -->
+ <div id="discord"></div>
+ <div class="main4">
+   <a class="headline">Hoodlife Roleplay</a>
+   <div class="main4_dc_div">
+     <div class="main4_dc_description_div">
+   <!-- <a class="main4_dc_description_title">Let's talk!</a>  --> 
+       <a class="main4_dc_description"><br><br> Welcome to Hoodlife Roleplay Server,
+         <p></p>
+         here you will find everything you need to know about our server, our unique features and all of our work until now.
+         <p></p>
+         Hoodlife prevails for more than 12 months on TOP Greek Minecraft Roleplay servers, but we're not about to stay there. 
+        <p></p>
+        We will be soon launching a Official Hoodlife server, ready to welcome players from all Devices with new fantastic features you will not find anywhere else!</a>
+       <a href="https://discord.gg/hoodliferpgr" class="main4_dc_button_a">
+         <div class="main4_dc_button">Join</div>
+       </a>
+     </div>
+       <iframe src="https://discord.com/widget?id=1102176531146608742&theme=dark" width="400" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+   </div>
+ </div>
+
+      <!-- More -->
+      <div id="more"></div>
+      <div class="main2">
+        <a class="headline">Unique Features</a>
+        <div class="main2_features_div">
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="assets/images/bg.png">
+            <a class="main2_feature_headline">Innovative Gameplay</a>
+            <a class="main2_feature_text">Experience our unique mods: Garage, Baking, and ID Cards, for an exciting gameplay adventure.</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="assets/images/bg.png">
+            <a class="main2_feature_headline">Enhanced Roleplay Assistance</a>
+            <a class="main2_feature_text">Rely on our friendly team for seamless guidance throughout your immersive roleplay journey.</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="assets/images/bg.png">
+            <a class="main2_feature_headline">Diverse Enhancements</a>
+            <a class="main2_feature_text">From Garage to Baking and ID Cards, we offer enhancements that enrich and diversify your roleplay experience.            </a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="assets/images/bg.png">
+            <a class="main2_feature_headline">Your Unique Adventure</a>
+            <a class="main2_feature_text">Embark on a one-of-a-kind roleplay adventure with our distinctive systems and dedicated staff by your side.</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="assets/images/bg.png">
+            <a class="main2_feature_headline">Feature 5</a>
+            <a class="main2_feature_text">Feature description</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- About -->
+      <div id="about"></div>
+      <div class="main5">
+        <a class="headline">Screenshots from the server</a>
+        <div class="main2_features_div">
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="assets/images/placeholder1.png">
+            <a class="main2_feature_headline">Screenshot 1</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="assets/images/placeholder2.png">
+            <a class="main2_feature_headline">Screenshot 2</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="assets/images/placeholder3.png">
+            <a class="main2_feature_headline">Screenshot 3</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="assets/images/placeholder4.png">
+            <a class="main2_feature_headline">Screenshot 4</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" href="http://hoodliferp.xyz:8123" alt="Feature Image" src="https://media.forgecdn.net/avatars/769/168/638106319565812988.png">
+            <a class="main2_feature_headline" href="http://hoodliferp.xyz:8123">Take a look for yourself</a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div id="join"></div>
+      <div class="main3">
+        <a class="headline">How to join</a>
+        <div class="main3_join_div_div">
+          <div class="main3_join_div">
+            <a class="main3_join_title">Java</a>
+            <div class="main3_join_content_div">
+              <div class="main3_join_categories">
+                <a>IP:</a>
+                <a>Version:</a>
+              </div>
+              <div class="main3_join_values">
+                <a>hoodliferp.xyz</a>
+                <a>1.16.5</a>
+              </div>
+            </div>
+          </div>
+          <div class="main3_join_div">
+            <a class="main3_join_title">Mods required</a>
+              <div class="main3_join_values">
+                <a href="https://youtu.be/P8nmXKIcTCs">Watch tutorial video</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="copyright_div">
+      <a href="index.html" class="copyright">Copyright Hoodlife RP | Site made by Kotsasmin 2023</a>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li><a href="https://instagram.com/hoodliferp_official"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+          <li><a href="https://twitter.com/HoodLifeRP2022"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+          <li><a href="https://www.youtube.com/@hoodliferpgr"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </li>
+          <li><a href="https://www.tiktok.com/@hoodliferoleplaygr"><i class="fa fa-vine" aria-hidden="true"></i></a> </li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/music.js"></script>
+  </body>
+</html>
+ <!--Kotsasmin has wrote this website. Do not reproduce!-->
+ <!--All rights go to him and his helper m4r1os.-->
